@@ -2,7 +2,11 @@ yCoordinate = random (50, 200)
 XCoordinate = random (50, 200)
 ySpeed=5
 xSpeed=2
+<<<<<<< HEAD
 ellipseSize= 40
+=======
+ellipseSize= 50
+>>>>>>> 23246d7740813c0f0b37a130b3eb5d03c99874bb
 
 
 
@@ -19,7 +23,12 @@ def draw():
     brickBoundary = topBoundary + 25
     leftBoundary = ellipseSize /2
     rightBoundary = 600 - ellipseSize / 2
+<<<<<<< HEAD
     paddleBoundary = brickBoundary + 555
+=======
+    paddleBoundary= bottomBoundary + 300
+
+>>>>>>> 23246d7740813c0f0b37a130b3eb5d03c99874bb
     
     if yCoordinate >= bottomBoundary or yCoordinate <= topBoundary:
         ySpeed = -ySpeed
@@ -28,6 +37,7 @@ def draw():
         xSpeed = -xSpeed
       
     if yCoordinate <= brickBoundary and XCoordinate >= brickBoundary:
+<<<<<<< HEAD
         ySpeed = -ySpeed
     if yCoordinate >= brickBoundary and XCoordinate >= brickBoundary:
        ySpeed = -ySpeed 
@@ -36,6 +46,18 @@ def draw():
        fill(0)
        rect(mouseX, 580, 50, 20)
            
+=======
+        ySpeed = -ySpeed 
+        
+    if yCoordinate >= paddleBoundary and XCoordinate >= paddleBoundary:
+        ySpeed = -ySpeed 
+        
+   
+        
+    if mouseX and mouseY:
+       fill(0)
+       rect(mouseX, 580, 40, 20) 
+>>>>>>> 23246d7740813c0f0b37a130b3eb5d03c99874bb
     
     XCoordinate += xSpeed
     yCoordinate += ySpeed
