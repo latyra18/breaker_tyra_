@@ -27,7 +27,11 @@ def draw():
         xSpeed = -xSpeed
       
     if yCoordinate <= brickBoundary and XCoordinate >= brickBoundary:
-        ySpeed = -ySpeed  
+        ySpeed = -ySpeed 
+        
+    if XCoordinate and (mouseX >= 0 and mouseX <= 50) and (mouseY > 306 and mouseY <= 400):
+       fill(0)
+       rect(pmouseX, pmouseY, 20, 20) 
     
     XCoordinate += xSpeed
     yCoordinate += ySpeed
@@ -38,13 +42,13 @@ def draw():
     fill(0, 191, 255)
     rect(0, 0, 90, 25)
     
-    fill(238, 203, 173)
+    fill(255, 128, 0)
     rect(90, 0, 90, 25)
     
     fill(255, 69, 0)
     rect(180, 0, 90, 25)
     
-    fill(205, 92, 92)
+    fill(128, 0, 128)
     rect(270, 0, 90, 25)
     
     fill(255, 255, 0)
@@ -56,7 +60,5 @@ def draw():
     fill(0, 255, 0)
     rect(540, 0, 90, 25)
 
-def mouseDragged(): 
-    rect(0,0,30,15)
 
     
