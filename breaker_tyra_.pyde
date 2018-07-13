@@ -34,7 +34,7 @@ def draw():
     if yCoordinate <= brickBoundary and XCoordinate >= brickBoundary:
 
         ySpeed = -ySpeed
-    if xCoordinate <= 
+
    # if yCoordinate >= brickBoundary and XCoordinate >= brickBoundary:
       # ySpeed = -ySpeed         
 
