@@ -19,8 +19,7 @@ def draw():
     brickBoundary = topBoundary + 25
     leftBoundary = ellipseSize /2
     rightBoundary = 600 - ellipseSize / 2
-    paddleBoundary= bottomBoundary + 300
-
+    
     
     if yCoordinate >= bottomBoundary or yCoordinate <= topBoundary:
         ySpeed = -ySpeed
@@ -31,15 +30,14 @@ def draw():
     if yCoordinate <= brickBoundary and XCoordinate >= brickBoundary:
         ySpeed = -ySpeed 
         
-    if yCoordinate >= paddleBoundary and XCoordinate >= paddleBoundary:
-        ySpeed = -ySpeed 
+
         
-   
-        
-    if mouseX and mouseY:
+    if mouseX >=0 and mouseX <= 650:
        fill(0)
-       rect(mouseX, 580, 40, 20) 
-    
+       rect(mouseX, 580, 40, 20)
+            
+
+       
     XCoordinate += xSpeed
     yCoordinate += ySpeed
     
